@@ -55,6 +55,12 @@ def generate_launch_description():
         output='screen',
         arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom']
     )
+
+    use_sim_time = LaunchConfiguration('use_sim_time')
+    map_yaml_file = LaunchConfiguration('map')
+    param_file = LaunchConfiguration('param_file')
+
+    lifecycle_nodes = ['map_server', 'amcl', 'planner_server', 'controller_server', 'bt_navigator']
     # Create the LaunchDescription
     return LaunchDescription([
         declare_use_sim_time_arg,
@@ -63,6 +69,56 @@ def generate_launch_description():
         bringup_launch,
         map_server_node,
         static_transform_publisher_node,
+
+Node(
+            package='nav2_map_server',
+            executable='map_server',
+            name='map_server',
+            output='screen',
+            parameters=[param_file]
+        ),
+        
+        Node(
+            package='nav2_amcl',
+            executable='amcl',
+            name='amcl',
+            output='screen',
+            parameters=[param_file]
+        ),
+
+        Node(
+            package='nav2_planner',
+            executable='planner_server',
+            name='planner_server',
+            output='screen',
+            parameters=[param_file]
+        ),
+
+        Node(
+            package='nav2_controller',
+            executable='controller_server',
+            name='controller_server',
+            output='screen',
+            parameters=[param_file]
+        ),
+
+        Node(
+            package='nav2_bt_navigator',
+            executable='bt_navigator',
+            name='bt_navigator',
+            output='screen',
+            parameters=[param_file]
+        ),
+
+        Node(
+            package='nav2_lifecycle_manager',
+            executable='lifecycle_manager',
+            name='lifecycle_manager_navigation',
+            output='screen',
+            parameters=[{'use_sim_time': use_sim_time},
+                        {'autostart': True},
+                        {'node_names': lifecycle_nodes}]
+        ),
         Node(
             package='rviz2',
             executable='rviz2',
