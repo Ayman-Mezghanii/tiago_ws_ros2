@@ -1,0 +1,36 @@
+positives/1 (copy).jpeg 1 41 8 75 137
+positives/1.jpeg 1 41 8 75 137
+positives/10 (copy).jpeg 1 63 8 98 200
+positives/10.jpeg 1 63 8 98 200
+positives/11 (copy).jpeg 1 63 8 98 200
+positives/11.jpeg 1 63 8 98 200
+positives/12 (copy).jpeg 2 78 40 3 1 78 40 71 140
+positives/12.jpeg 1 78 40 71 140
+positives/13.jpeg 1 78 40 71 140
+positives/14 (copy).jpeg 1 78 40 71 140
+positives/14.jpeg 1 78 40 71 140
+positives/15 (43rd copy).jpeg 1 67 13 112 186
+positives/15 (another copy).jpeg 1 67 13 112 186
+positives/15 (copy).jpeg 1 67 13 112 186
+positives/15.jpeg 1 67 13 112 186
+positives/16 (another copy).jpeg 1 79 44 79 148
+positives/16 (copy).jpeg 1 79 44 79 148
+positives/16.jpeg 1 79 44 79 148
+positives/17 (3rd copy).jpeg 1 71 77 2 5
+positives/17.jpeg 1 71 77 2 5
+positives/2 (copy).jpeg 4 0 0 0 0 0 0 0 0 0 0 0 0 73 9 64 128
+positives/2.jpeg 1 73 9 64 128
+positives/3 (copy).jpeg 2 35 4 13 1 49 1 52 135
+positives/3.jpeg 1 49 1 52 135
+positives/4 (copy).jpeg 1 39 16 76 129
+positives/4.jpeg 1 39 16 76 129
+positives/5 (copy).jpeg 1 39 16 76 129
+positives/5.jpeg 1 39 16 76 129
+positives/6 (copy).jpeg 1 51 36 105 193
+positives/6.jpeg 1 51 36 105 193
+positives/7 (copy).jpeg 1 101 37 79 118
+positives/7.jpeg 1 101 37 79 118
+positives/8 (copy).jpeg 2 142 186 1 6 60 40 82 152
+positives/8.jpeg 1 60 40 82 152
+positives/9 (copy).jpeg 2 60 28 5 12 65 28 100 172
+positives/9.jpeg 1 65 28 100 172
